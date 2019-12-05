@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial;
+    background: url('../images/bg1.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+
+  .photo{
+      text-align: center;
+      margin: 0 auto;
+  }
+  .photo-row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+    margin-left: 55px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .photo-col {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 32%;
+    padding: 0 4px;
+  }
+  
+  .photo-col img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .photo-col {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .photo-col {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+.autocomplete{
+    position: relative;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+}
+
+.autocomplete-items{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+}
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4;
+  }
+
+  .gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; 
+  }
+
+  .pagination-links{
+    padding-left: 35px;
+    padding-bottom:10px;
+}
+
+.pagination-links strong{
+	padding: 8px 13px;
+	margin:5px;
+	background: #f4f4f4;
+	border: 1px #ccc solid;
+}
+
+a.pagination-link{
+    padding:8px 13px;
+    margin:5px;
+    background: #f4f4f4;
+    border:1px #ccc solid;
+}
+
+.chat_title{
+  font-family: 'Baloo Bhai', cursive;
+}
+
+
+div#div3_chatroom {
+  margin-top: 100px;
+}
+
+div#chatroom_display {
+  border:1px solid;
+  border-radius: 5px;
+  margin: 50px;
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background: rgb(73, 164, 216);
+  color: white;
+  border-style: outset;
+  border-color: rgb(73, 164, 216);
+  height: 30px;
+  width: 100px;
+  font: bold 15px arial, sans-serif;
+  text-shadow:none;
+  border-radius: 6px;
+  }
+
+  input[type="text"] {
+    border-radius: 6px;
+    
+    width: 250px;
+    
+    margin-top: 15px;
+}
